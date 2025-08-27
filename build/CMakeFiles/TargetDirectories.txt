@@ -1,5 +1,6 @@
 /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles/gpu_simulator.dir
 /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles/gpu_tests.dir
+/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles/simple_example.dir
 /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles/edit_cache.dir
 /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles/rebuild_cache.dir
 /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles/list_install_components.dir

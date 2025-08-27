@@ -30,5 +30,14 @@ if(TEST_SOURCES)
     target_include_directories(gpu_tests PRIVATE include)
 endif()
 
+# Example executable
+add_executable(simple_example examples/simple_example.cpp
+               src/gpu_core.cpp 
+               src/memory_hierarchy.cpp 
+               src/graphics_pipeline.cpp 
+               src/texture_cache.cpp 
+               src/performance_monitor.cpp)
+target_include_directories(simple_example PRIVATE include)
+
 # Install targets
 install(TARGETS gpu_simulator DESTINATION bin)

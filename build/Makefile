@@ -187,6 +187,43 @@ gpu_tests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/build
 .PHONY : gpu_tests/fast
 
+#=============================================================================
+# Target rules for targets named simple_example
+
+# Build rule for target.
+simple_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_example
+.PHONY : simple_example
+
+# fast build rule for target.
+simple_example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/build
+.PHONY : simple_example/fast
+
+examples/simple_example.o: examples/simple_example.cpp.o
+.PHONY : examples/simple_example.o
+
+# target to build an object file
+examples/simple_example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/examples/simple_example.cpp.o
+.PHONY : examples/simple_example.cpp.o
+
+examples/simple_example.i: examples/simple_example.cpp.i
+.PHONY : examples/simple_example.i
+
+# target to preprocess a source file
+examples/simple_example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/examples/simple_example.cpp.i
+.PHONY : examples/simple_example.cpp.i
+
+examples/simple_example.s: examples/simple_example.cpp.s
+.PHONY : examples/simple_example.s
+
+# target to generate assembly for a file
+examples/simple_example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/examples/simple_example.cpp.s
+.PHONY : examples/simple_example.cpp.s
+
 src/gpu_core.o: src/gpu_core.cpp.o
 .PHONY : src/gpu_core.o
 
@@ -194,6 +231,7 @@ src/gpu_core.o: src/gpu_core.cpp.o
 src/gpu_core.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/gpu_core.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/gpu_core.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/gpu_core.cpp.o
 .PHONY : src/gpu_core.cpp.o
 
 src/gpu_core.i: src/gpu_core.cpp.i
@@ -203,6 +241,7 @@ src/gpu_core.i: src/gpu_core.cpp.i
 src/gpu_core.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/gpu_core.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/gpu_core.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/gpu_core.cpp.i
 .PHONY : src/gpu_core.cpp.i
 
 src/gpu_core.s: src/gpu_core.cpp.s
@@ -212,6 +251,7 @@ src/gpu_core.s: src/gpu_core.cpp.s
 src/gpu_core.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/gpu_core.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/gpu_core.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/gpu_core.cpp.s
 .PHONY : src/gpu_core.cpp.s
 
 src/graphics_pipeline.o: src/graphics_pipeline.cpp.o
@@ -221,6 +261,7 @@ src/graphics_pipeline.o: src/graphics_pipeline.cpp.o
 src/graphics_pipeline.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/graphics_pipeline.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/graphics_pipeline.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/graphics_pipeline.cpp.o
 .PHONY : src/graphics_pipeline.cpp.o
 
 src/graphics_pipeline.i: src/graphics_pipeline.cpp.i
@@ -230,6 +271,7 @@ src/graphics_pipeline.i: src/graphics_pipeline.cpp.i
 src/graphics_pipeline.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/graphics_pipeline.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/graphics_pipeline.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/graphics_pipeline.cpp.i
 .PHONY : src/graphics_pipeline.cpp.i
 
 src/graphics_pipeline.s: src/graphics_pipeline.cpp.s
@@ -239,6 +281,7 @@ src/graphics_pipeline.s: src/graphics_pipeline.cpp.s
 src/graphics_pipeline.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/graphics_pipeline.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/graphics_pipeline.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/graphics_pipeline.cpp.s
 .PHONY : src/graphics_pipeline.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -272,6 +315,7 @@ src/memory_hierarchy.o: src/memory_hierarchy.cpp.o
 src/memory_hierarchy.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/memory_hierarchy.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/memory_hierarchy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/memory_hierarchy.cpp.o
 .PHONY : src/memory_hierarchy.cpp.o
 
 src/memory_hierarchy.i: src/memory_hierarchy.cpp.i
@@ -281,6 +325,7 @@ src/memory_hierarchy.i: src/memory_hierarchy.cpp.i
 src/memory_hierarchy.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/memory_hierarchy.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/memory_hierarchy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/memory_hierarchy.cpp.i
 .PHONY : src/memory_hierarchy.cpp.i
 
 src/memory_hierarchy.s: src/memory_hierarchy.cpp.s
@@ -290,6 +335,7 @@ src/memory_hierarchy.s: src/memory_hierarchy.cpp.s
 src/memory_hierarchy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/memory_hierarchy.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/memory_hierarchy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/memory_hierarchy.cpp.s
 .PHONY : src/memory_hierarchy.cpp.s
 
 src/performance_monitor.o: src/performance_monitor.cpp.o
@@ -299,6 +345,7 @@ src/performance_monitor.o: src/performance_monitor.cpp.o
 src/performance_monitor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/performance_monitor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/performance_monitor.cpp.o
 .PHONY : src/performance_monitor.cpp.o
 
 src/performance_monitor.i: src/performance_monitor.cpp.i
@@ -308,6 +355,7 @@ src/performance_monitor.i: src/performance_monitor.cpp.i
 src/performance_monitor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/performance_monitor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/performance_monitor.cpp.i
 .PHONY : src/performance_monitor.cpp.i
 
 src/performance_monitor.s: src/performance_monitor.cpp.s
@@ -317,6 +365,7 @@ src/performance_monitor.s: src/performance_monitor.cpp.s
 src/performance_monitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/performance_monitor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/performance_monitor.cpp.s
 .PHONY : src/performance_monitor.cpp.s
 
 src/texture_cache.o: src/texture_cache.cpp.o
@@ -326,6 +375,7 @@ src/texture_cache.o: src/texture_cache.cpp.o
 src/texture_cache.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/texture_cache.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/texture_cache.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/texture_cache.cpp.o
 .PHONY : src/texture_cache.cpp.o
 
 src/texture_cache.i: src/texture_cache.cpp.i
@@ -335,6 +385,7 @@ src/texture_cache.i: src/texture_cache.cpp.i
 src/texture_cache.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/texture_cache.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/texture_cache.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/texture_cache.cpp.i
 .PHONY : src/texture_cache.cpp.i
 
 src/texture_cache.s: src/texture_cache.cpp.s
@@ -344,6 +395,7 @@ src/texture_cache.s: src/texture_cache.cpp.s
 src/texture_cache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_simulator.dir/build.make CMakeFiles/gpu_simulator.dir/src/texture_cache.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/src/texture_cache.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/texture_cache.cpp.s
 .PHONY : src/texture_cache.cpp.s
 
 tests/test_suite.o: tests/test_suite.cpp.o
@@ -384,6 +436,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gpu_simulator"
 	@echo "... gpu_tests"
+	@echo "... simple_example"
+	@echo "... examples/simple_example.o"
+	@echo "... examples/simple_example.i"
+	@echo "... examples/simple_example.s"
 	@echo "... src/gpu_core.o"
 	@echo "... src/gpu_core.i"
 	@echo "... src/gpu_core.s"

@@ -65,11 +65,13 @@ CMAKE_BINARY_DIR = /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-
 # The main recursive "all" target.
 all: CMakeFiles/gpu_simulator.dir/all
 all: CMakeFiles/gpu_tests.dir/all
+all: CMakeFiles/simple_example.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/gpu_simulator.dir/codegen
 codegen: CMakeFiles/gpu_tests.dir/codegen
+codegen: CMakeFiles/simple_example.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -79,6 +81,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/gpu_simulator.dir/clean
 clean: CMakeFiles/gpu_tests.dir/clean
+clean: CMakeFiles/simple_example.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -144,6 +147,38 @@ CMakeFiles/gpu_tests.dir/codegen:
 CMakeFiles/gpu_tests.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_tests.dir/build.make CMakeFiles/gpu_tests.dir/clean
 .PHONY : CMakeFiles/gpu_tests.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/simple_example.dir
+
+# All Build rule for target.
+CMakeFiles/simple_example.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=15,16,17,18,19,20,21 "Built target simple_example"
+.PHONY : CMakeFiles/simple_example.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/simple_example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simple_example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles 0
+.PHONY : CMakeFiles/simple_example.dir/rule
+
+# Convenience name for target.
+simple_example: CMakeFiles/simple_example.dir/rule
+.PHONY : simple_example
+
+# codegen rule for target.
+CMakeFiles/simple_example.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=15,16,17,18,19,20,21 "Finished codegen for target simple_example"
+.PHONY : CMakeFiles/simple_example.dir/codegen
+
+# clean rule for target.
+CMakeFiles/simple_example.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/clean
+.PHONY : CMakeFiles/simple_example.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
