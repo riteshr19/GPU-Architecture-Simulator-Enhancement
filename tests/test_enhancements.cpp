@@ -9,6 +9,7 @@
 #include <vector>
 #include <memory>
 #include <cmath>
+#include <filesystem>
 
 using namespace gpu_sim;
 
@@ -462,7 +463,7 @@ void test_checkpoint_create_save_load() {
     TestFramework::assert_near(cp.ipc, 0.5, 0.01, "IPC should be 0.5");
 
     // Save and load
-    std::string filepath = "/tmp/test_checkpoint.csv";
+    std::string filepath = (std::filesystem::temp_directory_path() / "test_checkpoint.csv").string();
     TestFramework::assert_true(engine.save_checkpoint(cp, filepath),
                                "Save checkpoint should succeed");
 

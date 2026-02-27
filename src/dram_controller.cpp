@@ -89,10 +89,8 @@ uint64_t DRAMController::enqueue_request(uint64_t address, DRAMRequestType type,
     DRAMRequest req(address, type, current_cycle, size);
 
     // Decode address into channel/bank/row/col
-    decode_address(address, req.channel_id, req.bank_id, req.row_id,
-                   /*col (unused in timing)*/ req.bank_id); // col unused
-    uint32_t col_dummy;
-    decode_address(address, req.channel_id, req.bank_id, req.row_id, col_dummy);
+    uint32_t col_unused;
+    decode_address(address, req.channel_id, req.bank_id, req.row_id, col_unused);
 
     // Compute completion time
     uint64_t latency = compute_access_latency(req, current_cycle);
