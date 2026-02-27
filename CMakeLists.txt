@@ -18,25 +18,29 @@ file(GLOB_RECURSE HEADERS "include/*.h")
 # Create main executable
 add_executable(gpu_simulator ${SOURCES} ${HEADERS})
 
-# Test executable
-file(GLOB_RECURSE TEST_SOURCES "tests/*.cpp")
-if(TEST_SOURCES)
-    add_executable(gpu_tests ${TEST_SOURCES} 
-                   src/gpu_core.cpp 
-                   src/memory_hierarchy.cpp 
-                   src/graphics_pipeline.cpp 
-                   src/texture_cache.cpp 
-                   src/performance_monitor.cpp)
-    target_include_directories(gpu_tests PRIVATE include)
-endif()
+# Shared source files (all non-main source files)
+set(LIB_SOURCES
+    src/gpu_core.cpp
+    src/memory_hierarchy.cpp
+    src/graphics_pipeline.cpp
+    src/texture_cache.cpp
+    src/performance_monitor.cpp
+    src/warp_scheduler.cpp
+    src/tensor_core.cpp
+    src/sector_cache.cpp
+    src/dram_controller.cpp
+    src/sim_checkpoint.cpp)
+
+# Test executable (original test suite)
+add_executable(gpu_tests tests/test_suite.cpp ${LIB_SOURCES})
+target_include_directories(gpu_tests PRIVATE include)
+
+# Enhancement test executable
+add_executable(gpu_enhancement_tests tests/test_enhancements.cpp ${LIB_SOURCES})
+target_include_directories(gpu_enhancement_tests PRIVATE include)
 
 # Example executable
-add_executable(simple_example examples/simple_example.cpp
-               src/gpu_core.cpp 
-               src/memory_hierarchy.cpp 
-               src/graphics_pipeline.cpp 
-               src/texture_cache.cpp 
-               src/performance_monitor.cpp)
+add_executable(simple_example examples/simple_example.cpp ${LIB_SOURCES})
 target_include_directories(simple_example PRIVATE include)
 
 # Install targets

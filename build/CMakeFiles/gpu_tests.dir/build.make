@@ -156,6 +156,76 @@ CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/performance_monitor.cpp -o CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.s
 
+CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o: CMakeFiles/gpu_tests.dir/flags.make
+CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o: /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/warp_scheduler.cpp
+CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o: CMakeFiles/gpu_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o -MF CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o.d -o CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o -c /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/warp_scheduler.cpp
+
+CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/warp_scheduler.cpp > CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.i
+
+CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/warp_scheduler.cpp -o CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.s
+
+CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o: CMakeFiles/gpu_tests.dir/flags.make
+CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o: /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/tensor_core.cpp
+CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o: CMakeFiles/gpu_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o -MF CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o.d -o CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o -c /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/tensor_core.cpp
+
+CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/tensor_core.cpp > CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.i
+
+CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/tensor_core.cpp -o CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.s
+
+CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o: CMakeFiles/gpu_tests.dir/flags.make
+CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o: /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sector_cache.cpp
+CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o: CMakeFiles/gpu_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o -MF CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o.d -o CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o -c /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sector_cache.cpp
+
+CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sector_cache.cpp > CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.i
+
+CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sector_cache.cpp -o CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.s
+
+CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o: CMakeFiles/gpu_tests.dir/flags.make
+CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o: /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/dram_controller.cpp
+CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o: CMakeFiles/gpu_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o -MF CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o.d -o CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o -c /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/dram_controller.cpp
+
+CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/dram_controller.cpp > CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.i
+
+CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/dram_controller.cpp -o CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.s
+
+CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o: CMakeFiles/gpu_tests.dir/flags.make
+CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o: /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sim_checkpoint.cpp
+CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o: CMakeFiles/gpu_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o -MF CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o.d -o CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o -c /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sim_checkpoint.cpp
+
+CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sim_checkpoint.cpp > CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.i
+
+CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/src/sim_checkpoint.cpp -o CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.s
+
 # Object files for target gpu_tests
 gpu_tests_OBJECTS = \
 "CMakeFiles/gpu_tests.dir/tests/test_suite.cpp.o" \
@@ -163,7 +233,12 @@ gpu_tests_OBJECTS = \
 "CMakeFiles/gpu_tests.dir/src/memory_hierarchy.cpp.o" \
 "CMakeFiles/gpu_tests.dir/src/graphics_pipeline.cpp.o" \
 "CMakeFiles/gpu_tests.dir/src/texture_cache.cpp.o" \
-"CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.o"
+"CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.o" \
+"CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o" \
+"CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o" \
+"CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o" \
+"CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o" \
+"CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o"
 
 # External object files for target gpu_tests
 gpu_tests_EXTERNAL_OBJECTS =
@@ -174,10 +249,15 @@ gpu_tests: CMakeFiles/gpu_tests.dir/src/memory_hierarchy.cpp.o
 gpu_tests: CMakeFiles/gpu_tests.dir/src/graphics_pipeline.cpp.o
 gpu_tests: CMakeFiles/gpu_tests.dir/src/texture_cache.cpp.o
 gpu_tests: CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.o
+gpu_tests: CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o
+gpu_tests: CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o
+gpu_tests: CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o
+gpu_tests: CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o
+gpu_tests: CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o
 gpu_tests: CMakeFiles/gpu_tests.dir/build.make
 gpu_tests: CMakeFiles/gpu_tests.dir/compiler_depend.ts
 gpu_tests: CMakeFiles/gpu_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable gpu_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/work/GPU-Architecture-Simulator-Enhancement/GPU-Architecture-Simulator-Enhancement/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable gpu_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpu_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

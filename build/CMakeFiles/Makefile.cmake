@@ -49,5 +49,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/gpu_simulator.dir/DependInfo.cmake"
   "CMakeFiles/gpu_tests.dir/DependInfo.cmake"
+  "CMakeFiles/gpu_enhancement_tests.dir/DependInfo.cmake"
   "CMakeFiles/simple_example.dir/DependInfo.cmake"
   )

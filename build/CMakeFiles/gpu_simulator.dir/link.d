@@ -2,12 +2,17 @@ gpu_simulator: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
+  CMakeFiles/gpu_simulator.dir/src/dram_controller.cpp.o \
   CMakeFiles/gpu_simulator.dir/src/gpu_core.cpp.o \
   CMakeFiles/gpu_simulator.dir/src/graphics_pipeline.cpp.o \
   CMakeFiles/gpu_simulator.dir/src/main.cpp.o \
   CMakeFiles/gpu_simulator.dir/src/memory_hierarchy.cpp.o \
   CMakeFiles/gpu_simulator.dir/src/performance_monitor.cpp.o \
+  CMakeFiles/gpu_simulator.dir/src/sector_cache.cpp.o \
+  CMakeFiles/gpu_simulator.dir/src/sim_checkpoint.cpp.o \
+  CMakeFiles/gpu_simulator.dir/src/tensor_core.cpp.o \
   CMakeFiles/gpu_simulator.dir/src/texture_cache.cpp.o \
+  CMakeFiles/gpu_simulator.dir/src/warp_scheduler.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -42,6 +47,8 @@ gpu_simulator: \
 
 /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
 
+CMakeFiles/gpu_simulator.dir/src/dram_controller.cpp.o:
+
 CMakeFiles/gpu_simulator.dir/src/gpu_core.cpp.o:
 
 CMakeFiles/gpu_simulator.dir/src/graphics_pipeline.cpp.o:
@@ -52,7 +59,15 @@ CMakeFiles/gpu_simulator.dir/src/memory_hierarchy.cpp.o:
 
 CMakeFiles/gpu_simulator.dir/src/performance_monitor.cpp.o:
 
+CMakeFiles/gpu_simulator.dir/src/sector_cache.cpp.o:
+
+CMakeFiles/gpu_simulator.dir/src/sim_checkpoint.cpp.o:
+
+CMakeFiles/gpu_simulator.dir/src/tensor_core.cpp.o:
+
 CMakeFiles/gpu_simulator.dir/src/texture_cache.cpp.o:
+
+CMakeFiles/gpu_simulator.dir/src/warp_scheduler.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
 

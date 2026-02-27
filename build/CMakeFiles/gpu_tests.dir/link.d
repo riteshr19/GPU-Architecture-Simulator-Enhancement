@@ -8,6 +8,11 @@ gpu_tests: \
   CMakeFiles/gpu_tests.dir/src/graphics_pipeline.cpp.o \
   CMakeFiles/gpu_tests.dir/src/texture_cache.cpp.o \
   CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.o \
+  CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o \
+  CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o \
+  CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o \
+  CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o \
+  CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -53,6 +58,16 @@ CMakeFiles/gpu_tests.dir/src/graphics_pipeline.cpp.o:
 CMakeFiles/gpu_tests.dir/src/texture_cache.cpp.o:
 
 CMakeFiles/gpu_tests.dir/src/performance_monitor.cpp.o:
+
+CMakeFiles/gpu_tests.dir/src/warp_scheduler.cpp.o:
+
+CMakeFiles/gpu_tests.dir/src/tensor_core.cpp.o:
+
+CMakeFiles/gpu_tests.dir/src/sector_cache.cpp.o:
+
+CMakeFiles/gpu_tests.dir/src/dram_controller.cpp.o:
+
+CMakeFiles/gpu_tests.dir/src/sim_checkpoint.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
 
