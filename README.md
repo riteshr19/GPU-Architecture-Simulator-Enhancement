@@ -1,6 +1,6 @@
 # GPU Architecture Simulator Enhancement
 
-A comprehensive GPU architecture simulator implemented in C++ that demonstrates deep understanding of computer architecture principles and includes an advanced texture cache optimization feature for improved graphics pipeline performance.
+A comprehensive GPU architecture simulator implemented in C++ that demonstrates deep understanding of computer architecture principles and includes advanced features for warp scheduling, tensor core MMA, sector caching, DRAM timing, and simulation sampling.
 
 ## Overview
 
@@ -9,9 +9,14 @@ This project implements a complete GPU architecture simulator with the following
 - **Multi-core GPU simulation** with configurable shader units
 - **Advanced memory hierarchy** including L1/L2 caches and VRAM
 - **Complete graphics pipeline** with vertex, rasterization, fragment, and output merger stages
-- **🆕 Advanced Texture Cache** with smart prefetching and adaptive caching (NEW FEATURE)
+- **Advanced Texture Cache** with smart prefetching and adaptive caching
+- **🆕 GTO Warp Scheduler** — Greedy-Then-Oldest and Two-Level scheduling policies
+- **🆕 Tensor Core MMA** — Mixed-precision Matrix-Multiply-Accumulate (FP16/BF16/TF32/INT8/INT4)
+- **🆕 Sector Cache with Bypassing** — Fine-grained sector validity and adaptive bypass
+- **🆕 DRAM Timing Model** — Row buffer hit/miss/conflict, bank-level parallelism (HBM2/GDDR6)
+- **🆕 SimPoint Checkpointing & Sampling** — Accelerate long simulations with representative sampling
 - **Comprehensive performance monitoring** and profiling system
-- **Rigorous testing and validation** framework
+- **Python-based validation regression** suite with Markdown reporting
 
 ## Key Features
 
@@ -21,8 +26,40 @@ This project implements a complete GPU architecture simulator with the following
 - **Graphics Pipeline**: Complete implementation of modern graphics pipeline stages
 - **Compute Shaders**: Support for general-purpose GPU computing
 
-### New Performance Enhancement Feature
-The **Advanced Texture Cache** is the primary enhancement that improves graphics algorithm performance:
+### New Enhancement Features
+
+#### GTO Warp Scheduler (`include/warp_scheduler.h`)
+- **Greedy-Then-Oldest** policy: greedily issues from the same warp until stall, then picks the oldest ready warp
+- **Two-Level scheduling** variant: partitions warps into fetch and ready groups
+- **Round-Robin** baseline for comparison
+- Tracks IPC, idle cycles, policy switches, and warp completion
+
+#### Tensor Core MMA (`include/tensor_core.h`)
+- Mixed-precision Matrix-Multiply-Accumulate: `D = A × B + C`
+- Supports FP16→FP16, FP16→FP32, BF16→FP32, TF32→FP32, INT8→INT32, INT4→INT32
+- Bit-accurate precision simulation (BF16/TF32 mantissa truncation)
+- Per-instruction latency model (4–16 cycles depending on precision)
+
+#### Sector Cache with Bypassing (`include/sector_cache.h`)
+- 128-byte lines divided into 4 × 32-byte sectors with independent validity
+- Only the requested sector is fetched on a miss (up to 75% bandwidth saving)
+- Bypass hints: `NO_BYPASS`, `BYPASS_L1`, `BYPASS_ALL_CACHE`, `STREAMING`
+- Adaptive streaming detection for automatic bypass
+
+#### DRAM Timing Model (`include/dram_controller.h`)
+- Row buffer hit / miss / conflict latency modeling
+- Bank-level parallelism across multiple channels and banks
+- FR-FCFS (First-Ready, First-Come-First-Served) scheduling
+- Pre-configured HBM2 and GDDR6 timing profiles
+
+#### SimPoint Checkpointing & Sampling (`include/sim_checkpoint.h`)
+- Checkpoint create / save / load for simulation state
+- SimPoint-style BBV clustering (k-means) to identify representative intervals
+- Weighted IPC estimation from sampled intervals
+- Estimated 10–50× speedup for large-scale traces
+
+### Texture Cache Optimization
+The **Advanced Texture Cache** improves graphics pipeline performance:
 
 - **Smart Prefetching**: Analyzes access patterns to predict future texture needs
 - **Adaptive Caching**: Dynamically adjusts caching strategies based on performance metrics
@@ -44,20 +81,41 @@ GPU Simulator Architecture
 │   ├── Shader Cores (configurable count)
 │   ├── Instruction Processing
 │   └── Thread Management
+├── 🆕 Warp Scheduler
+│   ├── GTO (Greedy-Then-Oldest) Policy
+│   ├── Two-Level Scheduling
+│   └── Round-Robin Baseline
+├── 🆕 Tensor Core Unit
+│   ├── Mixed-Precision MMA (D = A×B + C)
+│   ├── FP16/BF16/TF32/INT8/INT4 Support
+│   └── Per-Instruction Latency Model
 ├── Memory Hierarchy
 │   ├── L1 Cache (32KB, 4-way associative)
 │   ├── L2 Cache (512KB, 8-way associative)
 │   └── VRAM (4GB simulation)
+├── 🆕 Sector Cache
+│   ├── 128B Lines / 32B Sectors
+│   ├── Adaptive Bypassing
+│   └── Streaming Detection
+├── 🆕 DRAM Controller
+│   ├── HBM2 / GDDR6 Timing
+│   ├── Row Buffer Hit/Miss/Conflict
+│   ├── Bank-Level Parallelism
+│   └── FR-FCFS Scheduling
 ├── Graphics Pipeline
 │   ├── Vertex Stage
 │   ├── Rasterization Stage
 │   ├── Fragment Stage
 │   └── Output Merger Stage
-├── 🆕 Advanced Texture Cache
+├── Advanced Texture Cache
 │   ├── Smart Prefetching Engine
 │   ├── Adaptive Caching Algorithm
 │   ├── Pattern Recognition System
 │   └── Performance Analytics
+├── 🆕 SimPoint Engine
+│   ├── Checkpointing (Save/Load)
+│   ├── BBV Clustering (k-means)
+│   └── Weighted IPC Estimation
 └── Performance Monitor
     ├── Timing Measurements
     ├── Counter Management
@@ -92,7 +150,23 @@ make -j4
 
 # Run the test suite
 ./gpu_tests
+
+# Run the enhancement test suite
+./gpu_enhancement_tests
 ```
+
+### Validation & Regression
+
+A Python-based regression script compares IPC and cache metrics against a baseline:
+
+```bash
+# Run validation (first run creates baseline)
+python3 scripts/validation_regression.py --build-dir build
+
+# Output: validation_report.md with detailed comparison
+```
+
+See [`docs/rfc_enhancement_roadmap.md`](docs/rfc_enhancement_roadmap.md) for the full technical RFC.
 
 ## Usage Examples
 

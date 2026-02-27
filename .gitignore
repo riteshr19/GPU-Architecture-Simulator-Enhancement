@@ -6,6 +6,8 @@ cmake-build-*/
 *.exe
 gpu_simulator
 gpu_tests
+gpu_enhancement_tests
+simple_example
 
 # Object files
 *.o
@@ -35,3 +37,11 @@ Thumbs.db
 
 # Log files
 *.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Validation runtime outputs
+validation_report.md
+scripts/baseline.json
